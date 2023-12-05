@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Public/Favicon-Spotify.png">
+    <title>Anmelden - Spotify</title>
+    <link rel="stylesheet" href="style/Login.css">
+</head>
+<body>
+    <!--  Wir beginnen mit dem Header -->
+    <header id="header">
+        <a href="/index.html"><img class="LogIn-Image" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt=""></a>
+    </header>
+    <!--  Hier endet der Header hier kommt nur das Logo rein  -->
+    <!--  Ab hier geht alles los undzwar das Komplette Login -->
+    <main>
+        <div class="login-box">
+            <h2>Bei Spotify anmelden</h2>
+            <div class="social-buttons">
+                <a href="#" class="facebook-btn"><span><img src="https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg" alt=""></span>Weiter mit Google</a>
+                <a href="#" class="facebook-btn"><span><img src="https://accounts.scdn.co/sso/images/new-facebook-icon.eae8e1b6256f7ccf01cf81913254e70b.svg" alt=""></span>Weiter mit Facebook</a>
+                <a href="#" class="facebook-btn"><span><img src="https://accounts.scdn.co/sso/images/new-apple-icon.e356139ea90852da2e60f1ff738f3cbb.svg" alt=""></span>Weiter mit Apple</a>
+            </div>
+            <!-- Ab Hier einen Strich -->
+            <hr style="background-color: #4a4949; height: 2px; margin: 40px 0;"><br>
+            <form id="loginForm">
+                <h4>E-Mail-Adresse oder Benutzername</h3>
+                <input id="emailInput" class="Email" type="text" placeholder="E-Mail-Adresse oder Benutzername" required>
+                <h4>Passwort</h3>
+                <input id="passwordInput" class="password" type="password" placeholder="Passwort" required>
+                <div id="switch-container">
+                    <div id="switch" onclick="toggleSwitch()">
+                    <div id="circle"></div>
+                    </div>
+                    <h3>Benutzername speichern</h3>
+                </div>
+                <button class="Submit" type="submit">Anmelden</button>
+            </form>
+            <div class="Passwort_V">
+                <a href="#"> Passwort Vergessen?</a>
+            </div>
+            <!-- Ab Hier einen Strich -->
+            <hr style="background-color: #4a4949; height: 2px; margin: 60px 0;"><br>
+            <div class="Kein_Konto">
+                <h3>Du hast kein Konto?</h3><a href="./Regestrieren.html">Bei Spotify registrieren</a>
+            </div>
+            <div class="footer">
+                <p>Diese Website ist mit reCAPTCHA geschützt. Es gelten die
+                    <a href="https://policies.google.com/privacy">Datenschutzrichtlinie </a> und <a href="https://policies.google.com/terms"> Nutzungsbedingungen </a>
+                    von Google.
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/c01712aef1.js" crossorigin="anonymous"></script>
+    <script src="./JS/Login.js"></script>
+    <script src="/JS/Regestrierung.js"></script>
+    <script type="module" src="./JS/Eingeloggt.js"></script>
+</body>
+</html>

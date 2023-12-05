@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Public/Favicon-Spotify.png">
+    <title>Spotify--Webplayer:Musik für alle</title>
+    <link rel="stylesheet" href="./style/Eingeloggt.css">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+    <div class="logo">
+        <a href="#">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+        </a>
+    </div>
+
+    <div class="navigation">
+        <ul>
+        <li>
+            <a href="#">
+            <span class="fa fa-home"></span>
+            <span>Start</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="./LogIn-Search.html">
+            <span class="fa fa-search"></span>
+            <span>Suchen</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+            <span class="fa fas fa-book"></span>
+            <span>Bibliothek</span>
+            </a>
+        </li>
+        </ul>
+    </div>
+
+    <div class="navigation">
+        <ul>
+        <li>
+            <a href="#">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="./favoritenlist.html">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+            </a>
+        </li>
+        </ul>
+    </div>
+
+    <div class="policies">
+        <ul>
+        <li>
+            <a href="#">Cookies</a>
+        </li>
+        <li>
+            <a href="#">Privacy</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="main-container">
+    <div class="topbar">
+        <div class="prev-next-buttons">
+        <button type="button" class="fa fas fa-chevron-left"></button>
+        <button type="button" class="fa fas fa-chevron-right"></button>
+        </div>
+
+        <div class="navbar">
+        <ul>
+            <li>
+                <button id="Premium"><a href="">Premium entdecken</a></button>
+            </li>
+            <li>
+                <button id="App_install"><a class="fa-solid fa-circle-down fa-lg" href="">App installieren</a></button>
+            </li>
+            <li>
+                <a href="">
+                <span class="fa-solid fa-bell fa-lg"></span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="fa-solid fa-user fa-lg"></span>
+                </a>
+            </li>
+        </ul>
+        
+        </div>
+    </div>
+    <div class="main-seite">
+        <div class="spotify-playlists">
+        <h2>Bibliothek</h2>
+        <div class="list">
+            <div id="playlistTracks"></div>
+        </div>
+        </div>
+    </div>
+    <script
+    src="https://kit.fontawesome.com/23cecef777.js"
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/c01712aef1.js" crossorigin="anonymous"></script>
+    <script type="module" src="./JS/bibliothek.js"></script>
+    <script src="./JS/Login.js"></script>
+    <script type="module" src="./JS/Eingeloggt.js"></script>
+</body>
+</html>

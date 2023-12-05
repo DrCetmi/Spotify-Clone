@@ -15,8 +15,10 @@ Die Hauptseite zeigt vier Abschnitte mit verschiedenen Musikgenres an. Benutzer 
 
 ## Suchseite:
 
-Eine Suchseite ermöglicht es Benutzern, Künstler oder Lieder mithilfe der Deezer API zu suchen. 
+Eine Suchseite ermöglicht es Benutzern, Künstler oder Lieder mithilfe der Deezer API zu suchen.
 
 ## Bibliothek für favorisierte Lieder:
 
 Benutzer können Lieder als Favoriten markieren, und diese Favoriten werden im lokalen Speicher gespeichert. Es gibt eine dedizierte Bibliotheksseite, die die favorisierten Lieder anzeigt.
+
+Erstellt von: Patrick, Timo, Durmus

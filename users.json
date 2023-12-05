@@ -1,0 +1,21 @@
+{
+    "users": [
+    {
+        "email": "Patrick",
+        "password": "passwort1"
+    },
+    {
+        "email": "Timo",
+        "password": "passwort2"
+    },
+    {
+        "email": "Drumus",
+        "password": "passwort3"
+    },
+    {
+        "email":"Andreas",
+        "password":"passwort4"
+    }
+    
+    ]
+}
