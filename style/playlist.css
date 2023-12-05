@@ -160,3 +160,18 @@
     left: 25px;
     color: #fff;
   }
+  .player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    padding: 15px 40px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #audioPlayer {
+    width: 100%;
+    margin: 10px 0;
+  }

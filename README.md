@@ -21,4 +21,8 @@ Eine Suchseite ermöglicht es Benutzern, Künstler oder Lieder mithilfe der Deez
 
 Benutzer können Lieder als Favoriten markieren, und diese Favoriten werden im lokalen Speicher gespeichert. Es gibt eine dedizierte Bibliotheksseite, die die favorisierten Lieder anzeigt.
 
+## Musikleiste für Vorschau:
+
+Eine Musikleiste unten in der Anwendung ermöglicht es Benutzern, auf ein Lied zu klicken und eine Vorschau davon abzuspielen.
+
 Erstellt von: Patrick, Timo, Durmus

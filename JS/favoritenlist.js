@@ -55,12 +55,21 @@ async function displayFavorites() {
         const indexNummer = tableRow.querySelector(".indexNummer");
         indexNummer.innerHTML = `<td class="indexNummer">${index + 1}</td>`;
       });
+
+      tableRow.addEventListener("click", () => {
+        playMusic(track.preview);
+    });
   
       tableBody.appendChild(tableRow);
     });
     favoritesList.appendChild(table);
   }
   
+function playMusic(url) {
+  const audioPlayer = document.getElementById('audioPlayer');
+  audioPlayer.src = url;
+  audioPlayer.play();
+}
   function getFavoritesFromStorage() {
     return JSON.parse(localStorage.getItem('favorites')) || [];
   }

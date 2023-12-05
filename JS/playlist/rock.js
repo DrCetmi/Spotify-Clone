@@ -9,6 +9,7 @@ async function loadSongs(songs) {
   tableHeader.innerHTML = `
   <tr>
     <th>#</th>
+    <th></th>
     <th>Title</th>
     <th>Album</th>
     <th></th>
@@ -41,6 +42,7 @@ async function loadSongs(songs) {
     const tableRow = document.createElement('tr');
     tableRow.innerHTML = `
     <td class="indexNummer">${index + 1}</td>
+    <td class="playIcon"><i class="fa-solid fa-play faPlay"></i></td>
     <td>
       <div class="list">
         <img src="${trackImg}" alt="${trackTitle}" />
@@ -55,12 +57,15 @@ async function loadSongs(songs) {
     <td>${trackDuration}</td>
     `;
     const favIcon = tableRow.querySelector(".favIcon");
+    const playIcon = tableRow.querySelector(".fa-play");
 
     tableRow.addEventListener("mouseover", () => {
       tableRow.style.cursor = "pointer";
       const indexNummer = tableRow.querySelector(".indexNummer");
       indexNummer.innerHTML = `<i class="fa-solid fa-play"></i>`;
     });
+
+    
 
     tableRow.addEventListener("mouseout", () => {
       tableRow.style.backgroundColor = "";
@@ -73,10 +78,20 @@ async function loadSongs(songs) {
       favIcon.style.color = "green"
     });
 
+    playIcon.addEventListener("click", () => {
+      playMusic(track.preview);
+  });
+
     tableBody.appendChild(tableRow);
   }
 
   playlistTracksElement.appendChild(table);
+}
+
+function playMusic(url) {
+  const audioPlayer = document.getElementById('audioPlayer');
+  audioPlayer.src = url;
+  audioPlayer.play();
 }
 
 function convertDuration(durationInSeconds) {
@@ -109,11 +124,13 @@ async function getSongDetails(song) {
   const trackArtist = track.artist.name;
   const trackDuration = convertDuration(track.duration);
   const trackImg = track.album.cover;
+
   return {
     title: trackTitle,
     artist: trackArtist,
     duration: trackDuration,
-    image: trackImg
+    image: trackImg,
+  
   };
 }
 loadSongs(songs);
