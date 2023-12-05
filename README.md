@@ -33,3 +33,5 @@ Benutzer können Lieder als Favoriten markieren, und diese Favoriten werden im l
 ## Musikleiste für Vorschau:
 
 Eine Musikleiste unten in der Anwendung ermöglicht es Benutzern, auf ein Lied zu klicken und eine Vorschau davon abzuspielen. Erstellt von: [Durmus](https://github.com/DrCetmi)
+
+[![player](./Public/playlist%20und%20player.png)](#)
